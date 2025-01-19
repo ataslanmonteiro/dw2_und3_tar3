@@ -9,7 +9,7 @@ app.request(bodyParser.json());
 let temas = [];
 let categorias = [];
 
-// 3. /autor retorna HTML ou JSON com base no cabeçalho "accept"
+// 3. /autor retorna HTML ou JSON com base no cabeçalho "accept".
 app.get("/autor", (req, res) => {
   if (req.headers.accept === "application/json") {
     res.json({ autor: "Ataslan Monteiro", descricao: "Desenvolvedor Web" });
@@ -25,7 +25,7 @@ app.get("/autor", (req, res) => {
   }
 });
 
-// 4. Endpoints RESTful para "tema"
+// 4. Endpoints RESTful para "tema".
 app.get("/tema", (req, res) => res.json(temas));
 app.post("/tema", (req, res) => {
   const tema = req.body;
@@ -48,7 +48,7 @@ app.delete("/tema/:id", (req, res) => {
   res.status(204).send();
 });
 
-// 5. Endpoints RESTful para "categorias"
+// 5. Endpoints RESTful para "categorias".
 app.get("/categorias", (req, res) => res.json(categorias));
 app.post("/categorias", (req, res) => {
   const categoria = req.body;
@@ -71,7 +71,7 @@ app.delete("/categorias/:id", (req, res) => {
   res.status(204).send();
 });
 
-// Inicia o servidor
+// Inicia o servidor.
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
