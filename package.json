@@ -4,7 +4,7 @@
   "description": "Crie uma nova branch “rest”.\r a\r /autor deve mostrar um HTML ou um JSON, se o cabeçalho “accept” for “application/json”.\r Crie endpoints RESTful para manter o seu objeto tema.\r GET\r POST\r PUT\r DELETE\r Crie endpoints RESTful para manter as categorias do seu objeto tema.\r GET\r POST\r PUT\r DELETE\r aa\r Mescle a branch na principal.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
